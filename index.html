@@ -3,82 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jithin Varghese — Portfolio</title>
+  <title>Jithin Varghese</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="#" class="logo">Jithin Varghese</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">&#9790;</button>
-    </nav>
-  </header>
 
-  <section class="hero" id="hero">
-    <h1>Hi, I'm <span class="accent">Jithin Varghese</span></h1>
-    <p class="tagline">Software Engineer &amp; Creative Problem Solver</p>
-  </section>
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="wordmark">jv</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
 
-  <section class="section" id="about">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I'm a passionate software engineer who loves building elegant solutions to complex problems. With a strong foundation in full-stack development, I enjoy turning ideas into polished, user-friendly applications. When I'm not coding, you'll find me exploring new technologies, contributing to open source, or sharing knowledge with the community.</p>
-    </div>
-  </section>
+  <main>
 
-  <section class="section" id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="card skill-card">JavaScript / TypeScript</div>
-      <div class="card skill-card">Python</div>
-      <div class="card skill-card">React</div>
-      <div class="card skill-card">Node.js</div>
-      <div class="card skill-card">HTML &amp; CSS</div>
-      <div class="card skill-card">Git &amp; CI/CD</div>
-      <div class="card skill-card">SQL &amp; NoSQL</div>
-      <div class="card skill-card">Cloud (AWS / GCP)</div>
-    </div>
-  </section>
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1>Jithin Varghese</h1>
+      <p class="hero-sub">Data-driven problem solver. Currently at the University of Guelph. I build things with code, data, and curiosity.</p>
+      <div class="hero-links">
+        <a href="https://github.com/detviler" target="_blank" rel="noopener" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/jithin8u8/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      </div>
+    </section>
 
-  <section class="section" id="experience">
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Senior Software Engineer</h3>
-      <p class="meta">Acme Corp &mdash; 2022 &ndash; Present</p>
-      <p>Led development of customer-facing web applications, improved page load times by 40%, and mentored junior engineers on best practices.</p>
-    </div>
-    <div class="card">
-      <h3>Software Engineer</h3>
-      <p class="meta">Tech Innovations Inc. &mdash; 2019 &ndash; 2022</p>
-      <p>Built and maintained RESTful APIs and microservices, collaborated with cross-functional teams to deliver features on tight deadlines.</p>
-    </div>
-    <div class="card">
-      <h3>Junior Developer</h3>
-      <p class="meta">StartUp Labs &mdash; 2017 &ndash; 2019</p>
-      <p>Developed front-end components with React, wrote unit and integration tests, and participated in agile sprints.</p>
-    </div>
-  </section>
+    <!-- About -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="about-content">
+        <p>I'm a multidisciplinary professional with experience spanning data analysis, project management, and software development. I enjoy transforming complex data into actionable insights and building tools that make people's work easier.</p>
+        <p>With a background from Conestoga College and the University of Guelph, I bring both technical depth and a collaborative mindset to everything I do. I'm fluent in English, Hindi, and Malayalam.</p>
+      </div>
+    </section>
 
-  <section class="section" id="contact">
-    <h2>Contact</h2>
-    <div class="card contact-card">
-      <p>Interested in working together? Feel free to reach out.</p>
-      <ul class="contact-links">
-        <li>&#9993; <a href="mailto:jithin@example.com">jithin@example.com</a></li>
-        <li>&#128279; <a href="https://github.com/jithinvarghese" target="_blank" rel="noopener">GitHub</a></li>
-        <li>&#128279; <a href="https://linkedin.com/in/jithinvarghese" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span class="pill">SQL</span>
+        <span class="pill">Python</span>
+        <span class="pill">Tableau</span>
+        <span class="pill">JavaScript</span>
+        <span class="pill">Data Analysis</span>
+        <span class="pill">Project Management</span>
+        <span class="pill">HTML &amp; CSS</span>
+        <span class="pill">Git</span>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">2022 &ndash; Present</span>
+          </div>
+          <div class="timeline-body">
+            <h3>University of Guelph</h3>
+            <p>Working on data-driven projects and contributing to research initiatives that leverage analytics for decision-making.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">2019 &ndash; 2022</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Project &amp; Data Roles &mdash; India</h3>
+            <p>Managed cross-functional projects and delivered data analysis solutions across organizations in Mumbai and Pune.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Education</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Conestoga College &amp; University of Guelph</h3>
+            <p>Developed a strong foundation in technology, analytics, and collaborative problem-solving.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Get in Touch</h2>
+      <p class="contact-text">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:jithin@example.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">jithin@example.com</span>
+        </a>
+        <a href="https://github.com/detviler" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">detviler</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jithin8u8/" target="_blank" rel="noopener" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">jithin8u8</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>&copy; 2026 Jithin Varghese. All rights reserved.</p>
+    <p>&copy; 2026 Jithin Varghese</p>
   </footer>
 
   <script src="script.js"></script>
