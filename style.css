@@ -1,20 +1,18 @@
 /* ===== Theme Tokens ===== */
 :root {
-  --bg: #ffffff;
-  --bg-alt: #f7f7f7;
+  --bg: #EDEDE9;
+  --bg-alt: #E3E3DB;
   --text: #1a1a1a;
-  --text-secondary: #6b6b6b;
-  --text-tertiary: #999999;
+  --text-secondary: #5a5a5a;
+  --text-tertiary: #8a8a8a;
   --accent: #2d2d2d;
   --accent-hover: #000000;
-  --border: #e8e8e8;
-  --divider: #ebebeb;
-  --card-bg: #fafafa;
-  --card-hover: #f2f2f2;
-  --hero-shape: #f0f0f0;
-  --hero-shape-accent: #e4e4e4;
-  --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+  --border: #d5d5cd;
+  --divider: #ddddd5;
+  --card-bg: #F5F5F0;
+  --card-hover: #EAEAE3;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
   --radius: 6px;
   --radius-lg: 12px;
 }
@@ -31,8 +29,6 @@
   --divider: #1e1e1e;
   --card-bg: #161616;
   --card-hover: #1c1c1c;
-  --hero-shape: #1a1a1a;
-  --hero-shape-accent: #222222;
   --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
   --shadow-md: 0 4px 12px rgba(0,0,0,0.3);
 }
@@ -283,35 +279,20 @@ nav {
   border-color: var(--text);
 }
 
-/* Hero decorative shapes */
+/* Hero photo */
 .hero-visual {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-photo {
   width: 100%;
-  height: 400px;
-}
-
-.hero-shape {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 320px;
-  height: 320px;
-  background-color: var(--hero-shape);
-  border-radius: 50%;
-  transition: background-color 0.35s ease;
-}
-
-.hero-shape-accent {
-  position: absolute;
-  top: 40%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-  width: 200px;
-  height: 200px;
-  background-color: var(--hero-shape-accent);
-  border-radius: 50%;
-  transition: background-color 0.35s ease;
+  max-width: 420px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  box-shadow: var(--shadow-md);
+  transition: box-shadow 0.35s ease;
 }
 
 /* ===== Divider ===== */
